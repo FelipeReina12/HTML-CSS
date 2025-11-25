@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera web</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <form>
+    <table style="width: 300px;">
+        <thead>
+            <tr>
+            <th>producto</th>  <!-- se usa th para  -->
+            <th>Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Hola beats</td>
+            <td>gratis</td>
+        </tr>
+        <tr>
+            <td>Marranito</td>
+            <td>$19.50</td>
+        </tr>
+        <tr>
+            <td>Chanchito feliz muy feliz</td>
+            <td>$29</td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- ul es una lista no ordenada -->
+    <ul>
+        <li>Elemento </li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ol es una lista ordenada o enumerada -->
+    <ol>
+        <li value="50">Ordenada 1</li>  <!-- value es para asignar un valor desde donde comienza la lista --> 
+        <li>Ordenada 2</li>
+        <li>Ordenada 3</li>
+        <li>Ordenada 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: circle;">Sub elemento 1</li> <!--Style le da estilo al indice de la lista-->
+                <li style="list-style-type: circle;">Sub elemento 2</li>
+                <li style="list-style-type: circle;">Sub elemento 3</li>
+                <li style="list-style-type: circle;">Sub elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+    <form action="/formulario" method="post">  <!-- action es la URL a la que se enviará el formulario -->
         <label for="nombre">Nombre</label>  <!-- for vincula la etiqueta con el input -->
         <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"/>  <!-- name es el nombre del campo que se enviará al servidor -->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id ="apellido" name="apellido" placeholder="Ingresa tu apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea rows="10" cols="50" name="comentario" id="comentario" placeholder="Ingresa un comentario"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
     </form>
     <h1>Mi primer heading</h1>
     <h2>Mi segundo heading</h2>
