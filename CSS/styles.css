@@ -1,0 +1,17 @@
+#titulo {  /* # Selector que se usa para los id */
+    color : tomato;
+}
+
+p.texto {
+    color : slateblue;
+}
+
+p.especial {
+    color : mediumaquamarine;
+}
+
+div p {
+    color : aquamarine;
+}
+
+/* min 20:02 */
