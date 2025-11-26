@@ -14,4 +14,81 @@ div p {
     color : aquamarine;
 }
 
-/* min 20:02 */
+div h2, div h3 {
+    color : brown;
+}
+
+* {  /* Todos los elementos dentro de html*/
+    font-size: 24px;
+    /* background-color : rgb(235, 228, 228); */
+    /* color : black;  Solo para elementos que no tengan otro color definido */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.color {  /*Con ctrl + espacio se despliegan los colores*/
+    color : rgb(86, 112, 215);
+}
+
+.color {
+    /* border: 5px red outset; */
+    border-style: solid;
+    border-color : red;
+    border-radius : 5px;
+    border-width: 0.15rem;  /*los rem son relativos al tamaño de la fuente que tenga el elemento padre */
+}
+
+#fondo {
+    background-color : rgba(100, 150, 200, 0.3);  /*El ultimo valor es la opacidad*/
+    /* Opacity : 0.3; */
+    height: 200px;
+    /* background-image: url("/imagenes/pc.jpg"); */
+    /* background-repeat: repeat-y; */
+    background-position: right top;
+    background: #f00 url("/imagenes/pc.jpg") repeat-y center bottom /100px 100px;
+}
+
+.margin {
+    background-color: chocolate;
+    margin : 15px 50px;  /*Top Right Bottom Left */  /*Espacio externo*/
+    padding : 10px 10px;  /*Espacio interno*/ 
+    border : solid 1px black;
+    height : 37px;  
+    width: 229px-; /*Ancho del conenido*/
+    overflow: hidden;  /*Oculta lo que se salga del cuadro*/
+    outline : 1px red solid;  /*Linea externa al borde*/
+    text-align: center;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    /*Agregar fuentes: Google Fonts se pega en el head del html*/
+    text-align: center;
+    text-shadow: 2px 2px 5px blue;  /*Sombra del texto*/;
+}
+
+a:link {  /*Estado normal del enlace*/
+    color : blueviolet;
+    /* text-decoration: none;  Quita el subrayado del enlace */
+}
+
+a:visited {  /*Estado de enlace visitado*/
+    color : gray;
+}
+
+a:hover {  /*Estado cuando el mouse esta encima del enlace*/
+    color : yellow;
+}
+
+a:active {  /*Estado cuando se da click en el enlace*/
+    color : red;
+}
+
+ul {
+    background-color: cyan;
+    /* list-style-type: none;  Quita los puntos de la lista */
+    list-style-type: square;  /*Cambia los puntos por cuadrados*/
+    /* padding-left: 0;  Quita la sangria del ul */
+    list-style-position: inside;  /*Puntos dentro del cuadro*/
+}
+
+/*min 1:19:12*/
