@@ -91,4 +91,78 @@ ul {
     list-style-position: inside;  /*Puntos dentro del cuadro*/
 }
 
-/*min 1:19:12*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+} 
+
+th, td {
+    border: 1px solid #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {  /*Selecciona las filas pares*/  /*con nth-child(even) se selecciona un evento especifico*/
+    background-color: #eee;
+}
+
+tr:hover {  /*hover es para cuando el mouse esta encima de un elemento*/
+    background-color: #aaa;
+    cursor: pointer;  /*Cuando el mouse esta encima de la fila aparece la mano*/
+}
+
+span { 
+    display: block;  /*Los span son elementos inline por defecto, con display block se comportan como divs*/
+    max-width: 300px;
+    background-color: red;
+}
+
+.inline {
+    display: inline;  /*Se comporta como un span*/
+}
+
+#position {
+    position: relative;  /*Con relative se mueve respecto a su posición original*/
+    /* position: fixed;  Con fixed se mueve respecto a la ventana del navegador como quedar fijo */
+    /* position: absolute;  Con absolute se mueve respecto al primer padre que tenga posición relativa, si no tiene ninguno, respecto al body */
+    left: 20px;
+}
+
+.left {
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+.container {
+    height: 200px;
+}
+
+.column {
+    /* margin: 0px 15px; */
+    /* padding: 10px 15px; */
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red
+}
+
+.center {
+    padding: 50px 0px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}
